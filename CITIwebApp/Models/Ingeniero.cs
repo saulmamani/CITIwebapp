@@ -9,9 +9,12 @@ namespace CITIwebApp.Models
         public int Id { get; set; }
         [Required]
         public int Rni { get; set; }
+        [Required]
         public string? Ci { get; set; }
+        [Required]
         public string? NombreCompleto { get; set; }
         public DateTime FechaRegistro { get; set; }
+        [Required]
         public EspecialidadEnum Especialidad { get; set; }
     }
 }

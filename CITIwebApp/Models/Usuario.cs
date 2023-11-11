@@ -13,6 +13,7 @@ namespace CITIwebApp.Models
         public string? Password { get; set; }
         [Required]
         public string? NombreCompleto { get; set; }
+        [Required]
         public RolEmun Rol { get; set; }
     }
 }

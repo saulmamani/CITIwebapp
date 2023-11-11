@@ -12,6 +12,7 @@ namespace CITIwebApp.Models
         public string? Ci { get; set; }
         public string? NombreCompleto { get; set; }
         public DateTime FechaRegistro { get; set; }
+        [Requiredsssss]
         public EspecialidadEnum Especialidad { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace CITIwebApp.Context
             
         }
 
+        //Estas clases persistentes, se van a transformar en tablas en la BDD
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Ingeniero> Ingeniero { get; set; }
     }

@@ -28,12 +28,52 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Ingenieroes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Ingenieroes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Ingenieroes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Ingenieroes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Ingenieroes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5nZW5pZXJvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Docencia2023/II-2023/ProfesorExamples/CITIwebApp/CITIwebApp/Views/_ViewImports.cshtml]

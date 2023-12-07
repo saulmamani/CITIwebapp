@@ -9,6 +9,12 @@
 <div>
     <h4>Ingeniero</h4>
     <hr />
+
+    @if (Model.Foto != null)
+    {
+        <img src="~/fotos/@Model.Foto" class="img-thumbnail" width="150px" />
+    }
+
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Rni)

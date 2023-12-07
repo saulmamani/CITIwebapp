@@ -7,16 +7,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CITIwebApp.Context;
 using CITIwebApp.Models;
+using Microsoft.AspNetCore.Hosting;
 
 namespace CITIwebApp.Controllers
 {
     public class IngenieroesController : Controller
     {
         private readonly MiContext _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public IngenieroesController(MiContext context)
+        public IngenieroesController(MiContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Ingenieroes
@@ -88,7 +91,7 @@ namespace CITIwebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Rni,Ci,NombreCompleto,FechaRegistro,Monto,Foto,Especialidad")] Ingeniero ingeniero)
+        public async Task<IActionResult> Edit(int id, Ingeniero ingeniero)
         {
             if (id != ingeniero.Id)
             {
@@ -99,6 +102,12 @@ namespace CITIwebApp.Controllers
             {
                 try
                 {
+                    //cargar la foto
+                    if (ingeniero.FotoFile != null)
+                    {
+                        await SubirFoto(ingeniero);
+                    }
+
                     _context.Update(ingeniero);
                     await _context.SaveChangesAsync();
                 }
@@ -116,6 +125,21 @@ namespace CITIwebApp.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(ingeniero);
+        }
+
+        private async Task SubirFoto(Ingeniero ingeniero)
+        {
+            //formar el nombre del archivo foto
+            string wwRootPath = _webHostEnvironment.WebRootPath;
+            string extension = Path.GetExtension(ingeniero.FotoFile!.FileName);
+            string nombreFoto = $"{ingeniero.Id}{extension}";
+
+            ingeniero.Foto = nombreFoto;
+
+            //copiar la foto en el proyecto del servidor
+            string path = Path.Combine($"{wwRootPath}/fotos/", nombreFoto);
+            var fileStream = new FileStream(path, FileMode.Create);
+            await ingeniero.FotoFile.CopyToAsync(fileStream);
         }
 
         // GET: Ingenieroes/Delete/5
